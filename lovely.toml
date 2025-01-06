@@ -1,0 +1,37 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+# implements extra mult
+[[patches]]
+[patches.pattern]
+target = 'functions/common_events.lua'
+pattern = "elseif _c.set == 'Enhanced' then"
+position = 'before'
+match_indent = true
+payload = '''
+if specific_vars.bonus_mult then
+    localize{type = 'other', key = 'card_extra_mult', nodes = desc_nodes, vars = {specific_vars.bonus_mult}}
+end
+'''
+[[patches]]
+[patches.pattern]
+target = 'functions/common_events.lua'
+pattern = "elseif _c.set == 'Booster' then"
+position = 'before'
+match_indent = true
+payload = '''
+if (specific_vars and specific_vars.bonus_mult) then
+	localize{type = 'other', key = 'card_extra_mult', nodes = desc_nodes, vars = {(specific_vars and specific_vars.bonus_mult)}}
+end
+'''
+[[patches]]
+[patches.pattern]
+target = 'card.lua'
+pattern = "bonus_chips = (self.ability.bonus + (self.ability.perma_bonus or 0)) > 0 and (self.ability.bonus + (self.ability.perma_bonus or 0)) or nil,"
+position = 'after'
+match_indent = true
+payload = '''
+bonus_mult = (self.ability.bonus_mult or 0) > 0 and (self.ability.bonus_mult or 0) or nil,
+'''

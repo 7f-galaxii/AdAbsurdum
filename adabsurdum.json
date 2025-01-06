@@ -1,0 +1,14 @@
+{
+	"id": "adabsurdum",
+	"name": "Ad Absurdum",
+	"display_name": "Ad Absurdum",
+	"author": ["galaxii"],
+	"description": "various random ideas",
+	"prefix": "adabsurd",
+	"main_file": "adabsurdum.lua",
+	"priority": 0,
+	"badge_colour": "FF96EE",
+	"badge_text_colour": "FFFFFF",
+	"version": "0.1.0",
+	"dependencies": ["Steamodded (>=1.0.0~ALPHA-1303a)"],
+}
