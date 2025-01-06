@@ -4,7 +4,8 @@ Balatro mod adding an assortment of random ideas.
 ## Currently Implemented
 | Card | Type | Description |
 | ---- | ---- | ----------- |
-| 7-Up | Joker | Each played **7** permanently gains **+7** mult when scored |
+| 7-Up | Joker | Each played 7 permanently gains +7 mult when scored |
+| Iron Savior | Joker | Prevents death and destroys 1 Steel Card (Increase cards destroyed by 1 when Boss Blind defeated) |
 
 ## Unimplemented/Unfinished
 | Impl. | Card | Type | Description |
@@ -12,7 +13,7 @@ Balatro mod adding an assortment of random ideas.
 | <ul><li> - [x] </li></ul> | Dist. Wraith | Spectral | Fills Joker space with Rare Jokers, sets money to -$20 |
 | <ul><li> - [x] </li></ul> | Dist. Soul | Spectral | Creates a Negative Legendary Joker, +1 Ante (cannot be used on Ante 8) |
 | <ul><li> - [x] </li></ul> | Dist. Black Hole | Spectral | Upgrade all poker hands by 3 levels, reset played hand stats |
-| <ul><li> - [ ] </li></ul> | Dist. Medium | Spectral | Adds a **Spectral Seal** to one selected card |
+| <ul><li> - [ ] </li></ul> | Dist. Medium | Spectral | Adds a Spectral Seal to one selected card |
 | <ul><li> - [ ] </li></ul> | Dist. Trance | Spectral | Adds a Blue Seal to 2 chosen cards, removes all other seals from hand |
 | <ul><li> - [ ] </li></ul> | Dist. Deja Vu | Spectral | Adds a Red Seal to 2 chosen cards, removes all editions from hand |
 | <ul><li> - [ ] </li></ul> | Dist. Talisman | Spectral | Adds a Gold Seal to 2 chosen cards, removes all enhancements from hand |

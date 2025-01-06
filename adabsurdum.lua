@@ -12,7 +12,7 @@ SMODS.Atlas {
   py = 95
 }
 
-NFS.load(SMODS.current_mod.path .. 'misc.lua')()
+--NFS.load(SMODS.current_mod.path .. 'distortedspectral.lua')()
 
 NFS.load(SMODS.current_mod.path .. 'jokers/7up.lua')()
-
+NFS.load(SMODS.current_mod.path .. 'jokers/ironsavior.lua')()

@@ -8,6 +8,15 @@ return {
                     "permanently gains",
                     "{C:mult}+#1#{} mult when scored"
                 }
+            },
+            j_adabsurd_ironsavior={
+                name = 'Iron Savior',
+                text = {
+                    "{C:red}Prevents death",
+                    "Destroys #1# {C:attention}Steel Card(s){}",
+                    "{C:inactive,s:0.7}Increase cards destroyed by",
+                    "{C:inactive,s:0.7}#2# when Boss Blind defeated"
+                }
             }
         },
         Other={
@@ -19,5 +28,8 @@ return {
         },
     },
     misc = {
+        dictionary={
+            ph_mr_bones="Saved!"
+        }
     },
 }
