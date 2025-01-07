@@ -1,13 +1,13 @@
 SMODS.ConsumableType {
-  key = 'Antispectral',
+  key = 'distspectral',
   primary_colour = HEX("424e54"),
   secondary_colour = HEX("F945F9"),
   loc_txt = {
-    name = 'Antispectral',
-    collection = 'Antispectral Cards',
+    name = 'Distorted Spectral',
+    collection = 'Dist. Spectral Cards',
     undiscovered = {
-      name = "what",
-      text = { "how are you seeing this" },
+      name = "?",
+      text = { "discover" },
     }
   },
   collection_rows = { 4 , 5 },
@@ -15,12 +15,12 @@ SMODS.ConsumableType {
 }
 -- Antiwraith
 SMODS.Consumable {
-  set = 'Antispectral',
-  key = 'antiwraith',
+  set = 'distspectral',
+  key = 'distwraith',
   unlocked = true,
-  discovered = false,
+  discovered = true,
   loc_txt = {
-    name = 'Antiwraith',
+    name = 'Distorted Wraith',
     text = { 
       'Fills Joker space with',
       '{C:red}Rare{C:attention} Jokers{},',
@@ -59,12 +59,12 @@ SMODS.Consumable {
 
 -- Antisoul
 SMODS.Consumable {
-  set = 'Antispectral',
-  key = 'antisoul',
+  set = 'distspectral',
+  key = 'distsoul',
   unlocked = true,
-  discovered = false,
+  discovered = true,
   loc_txt = {
-    name = 'Antisoul',
+    name = 'Distorted Soul',
     text = { 
       'Creates a {C:dark_edition}Negative{}',
       '{C:legendary,E:1}Legendary{} Joker{},',
@@ -86,7 +86,7 @@ SMODS.Consumable {
   use = function(self, card, area, copier)
     ease_ante(1)
     G.GAME.round_resets.blind_ante = G.GAME.round_resets.blind_ante or G.GAME.round_resets.ante
-    G.GAME.round_resets.blind_ante = G.GAME.round_resets.blind_ante+1
+    G.GAME.round_resets.blind_ante = G.GAME.round_resets.blind_ante +1
     G.E_MANAGER:add_event(Event({trigger = 'after', delay = 0.4, func = function()
       play_sound('timpani')
       local card = create_card('Joker', G.jokers, true, nil, nil, nil, nil, 'antisou')
@@ -101,10 +101,10 @@ SMODS.Consumable {
 
 -- White Hole
 SMODS.Consumable {
-  set = 'Antispectral',
-  key = 'antihole',
+  set = 'distspectral',
+  key = 'White Hole',
   unlocked = true,
-  discovered = false,
+  discovered = true,
   loc_txt = {
     name = 'White Hole',
     text = { 

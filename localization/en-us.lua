@@ -19,6 +19,7 @@ return {
                 }
             }
         },
+        
         Other={
             card_extra_mult={
                 text={
